@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email-Validator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media(max-width: 600px) {
+        body {
+          background-color: yellow;
+        }
+
+        .container{
+          font-size: 15px;
+        }
+
+        nav{
+          flex-direction: column;
+        }
+
+        .logo{
+          padding: 12px 0px;
+        }
+
+      div img{
+        width: 20px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Email validator
+          <img src="img.svg" alt="">
+        </div>
+        <ul>
+          <li id="home">Home</li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Enter your Email to Evalidate</h1>
+        <form action="/submit" method="post">
+          <!-- Text input for username -->
+          <label for="username">Enter your Email:</label>
+          <br>
+          <input placeholder="Enter you Email to validate"    type="text" id="username" name="username" required />
+          <br /><br />
+
+          <!-- Password input -->
+          <labelfor="password">Password:</label>
+          <br> 
+          <input placeholder="Enter your password" type="password" id="password" name="password" required />
+          <br /><br />
+
+          <!-- Radio buttons for gender -->
+          <!-- <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <br /><br /> -->
+
+          <!-- Submit button -->
+          <input id="submitBtn"   class="btn" style="cursor: pointer;" type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="conatiner">
+        <h2>Show your results :-</h2>
+        <!-- <h6>The result is </h6> -->
+         <!-- <img src="loading.svg" alt style ="width: 70px;"> -->
+        <div id="resultCont">
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="1"><a href="#">Contact Us</a></div>
+      <div class="2">© 2024.All rights reserved.</div>
+      <div class="3">A Evalidator company</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

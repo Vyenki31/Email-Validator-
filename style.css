@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav > ul > li > a:hover{
+    color: yellow;
+    /* background-color: red; */
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: small;
+
+}
+
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+main{
+    min-height: 90vh;
+
+}
+
+.container{
+    background-color: red;
+    color: white;
+    margin: 0px 0px;
+    padding: 40px;
+
+}
+
+div img{
+    width: 20px;
+}
+
+.logo{
+    font-size: 23px;
+}
+
+.container h1{
+    padding: 12px 0px;
+}
+
+.btn{
+    font-size: 13px;
+    background: black;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 3rem;
+    
+}
+
+/* div > input > .btn :hover{
+    color: blue;
+} */
+
+
+#resultCont ::first-letter{
+    text-transform: uppercase;
+}
+
+input{
+    margin: 1px 1px;
+    padding: 1px 30px;
+}
+
+label{
+    margin: 0px -24px;
+    padding: 1px 54px;
+}
+
+#password{
+    margin: 1px -4px;
+    padding: 1px 30px;
+}
+
